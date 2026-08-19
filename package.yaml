@@ -21,4 +21,16 @@ bundle: true
 # shared object file" (requires debian-multiarch-builder v.0.1a19+).
 depends: libatomic1
 
-# Build for all Debian suites and all supported architectures.
+# pnpm publishes both a glibc build and a musl build per architecture
+# (e.g. pnpm-linux-x64.tar.gz vs pnpm-linux-x64-musl.tar.gz) - the musl
+# build's ELF interpreter (/lib/ld-musl-x86_64.so.1) doesn't exist on a
+# glibc-based system like Debian at all ("cannot execute: required file
+# not found"), so auto-discovery's pattern matching has to be pinned to
+# the glibc variant explicitly rather than risk it picking the musl one,
+# same reasoning as atuin/duckdb/bun's release_pattern overrides. pnpm
+# only publishes Linux builds for these two architectures.
+architectures:
+  amd64:
+    release_pattern: "pnpm-linux-x64.tar.gz"
+  arm64:
+    release_pattern: "pnpm-linux-arm64.tar.gz"
