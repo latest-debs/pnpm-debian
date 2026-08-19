@@ -1,0 +1,54 @@
+{
+  "gate": "fail",
+  "license": {
+    "declared": "MIT",
+    "detected": [
+      "Apache-2.0"
+    ],
+    "license_files": [
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/fdir/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/abbrev/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/which/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/nopt/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/graceful-fs/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/v8-compile-cache/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/undici/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/undici/lib/web/fetch/LICENSE",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/env-paths/license",
+      "//tmp/tmp.jOkWCy8AJJ/x/dist/node_modules/picomatch/LICENSE"
+    ],
+    "matches": false,
+    "status": "fail",
+    "detail": "declared MIT but detected Apache-2.0"
+  },
+  "asset": {
+    "format": "tar.gz",
+    "size": 53761040,
+    "valid": true,
+    "is_html": false,
+    "binary": "pnpm",
+    "elf_arch": "ARM aarch64",
+    "status": "pass",
+    "detail": "valid tar.gz archive containing 1 ELF executable(s); first: pnpm (ARM aarch64); release covers: amd64 arm64 "
+  },
+  "architectures": {
+    "covered": [
+      "amd64",
+      "arm64"
+    ],
+    "missing": [
+      "armel",
+      "armhf",
+      "i386",
+      "ppc64el",
+      "s390x",
+      "riscv64",
+      "loong64"
+    ],
+    "assets": {
+      "amd64": "pnpm-linux-x64-musl.tar.gz",
+      "arm64": "pnpm-linux-arm64-musl.tar.gz"
+    }
+  },
+  "vetted_at": "2026-08-19T15:19:08Z"
+}

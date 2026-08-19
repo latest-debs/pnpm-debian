@@ -1,0 +1,9 @@
+# Package definition for pnpm
+
+package_name: pnpm
+github_repo: pnpm/pnpm
+artifact_format: tar.gz
+description: "A fast, disk space efficient package manager for JavaScript/Node.js, using a content-addressable store to avoid duplicating dependencies."
+license: MIT
+
+# Build for all Debian suites and all supported architectures.

@@ -1,0 +1,35 @@
+{
+  "package": "pnpm",
+  "upstream_repo": "pnpm/pnpm",
+  "version": "v11.22.0",
+  "tag": "v11.22.0",
+  "published_at": "2026-08-15T17:18:05Z",
+  "license": "MIT",
+  "asset": "pnpm-linux-arm64-musl.tar.gz",
+  "asset_size": 53761040,
+  "sha256": "6e53557024be48e59ab8760f9117c0e5c0e0a37ab420f71f302d86216970d28f",
+  "expected_sha256": "",
+  "checksum_source": "",
+  "checksum_verified": false,
+  "assets": {
+    "pnpm-linux-x64.tar.gz": {
+      "sha256": "4c592fa410eb23b69691a9efb9bf21c87c15b3e9d88c6ec8acdd354a0eb8de71",
+      "size": 51236118
+    },
+    "pnpm-linux-arm64.tar.gz": {
+      "sha256": "f1426231f365bdfd46c15fa3d1211c3936ee2c4e557afd304f6c66dbf1b2a8bf",
+      "size": 51510358
+    },
+    "pnpm-linux-x64-musl.tar.gz": {
+      "sha256": "45425b06e747cbcaff4940d7b4a55e694645f15f9339dbf7f2601cfb21400545",
+      "size": 53206935
+    },
+    "pnpm-linux-arm64-musl.tar.gz": {
+      "sha256": "6e53557024be48e59ab8760f9117c0e5c0e0a37ab420f71f302d86216970d28f",
+      "size": 53761040
+    }
+  },
+  "asset_count": 4,
+  "vetted_at": "2026-08-19T15:19:04Z",
+  "vetted_by": ""
+}
