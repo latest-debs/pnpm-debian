@@ -6,4 +6,19 @@ artifact_format: tar.gz
 description: "A fast, disk space efficient package manager for JavaScript/Node.js, using a content-addressable store to avoid duplicating dependencies."
 license: MIT
 
+# pnpm ships a Node single-executable-application binary that needs its
+# own dist/ directory alongside it at runtime (looked up relative to the
+# binary's own location) - bundle keeps them as siblings under
+# /usr/lib/pnpm/ instead of flattening just the top-level binary and
+# discarding dist/ (requires debian-multiarch-builder v.0.1a20+, which
+# added root-level executable discovery for bundles with no bin/
+# subdirectory).
+bundle: true
+
+# The binary dynamically links against libatomic.so.1, which a bare
+# Debian install doesn't have - without this, `pnpm --version` fails with
+# "error while loading shared libraries: libatomic.so.1: cannot open
+# shared object file" (requires debian-multiarch-builder v.0.1a19+).
+depends: libatomic1
+
 # Build for all Debian suites and all supported architectures.
